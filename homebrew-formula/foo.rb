@@ -1,11 +1,12 @@
 class Foobar < Formula
     desc "<Dank bro>"
-    url "git@github.com:cesarbiods/Btree.git"
+    homepage "https://github.com/cesarbiods/Btree"
+    url "https://github.com/cesarbiods/Btree/get/HEAD.zip", :using => :curl
     version "1.0"
     sha256 "<sha>"
   def install
-      mv Dir.glob("foo-*").first, "foo"
-      bin.install "foo"
+    #   mv Dir.glob("Btree-*").first, "Btree"
+      bin.install "gradlew"
     end
     test do
       foo help
