@@ -1,14 +1,10 @@
 class Foobar < Formula
     desc "<Dank bro>"
-    homepage "https://github.com/cesarbiods/Btree"
-    url "https://github.com/cesarbiods/Btree/get/HEAD.zip", :using => :curl
+    homepage "https://bitbucket.wexapps.com/projects/MOB/repos/microcli/browse"
+    url "https://us-east-1.artifactory.wexapps.com/artifactory/fleet-mobile-snapshots/com/wex/microcli/refactor-SNAPSHOT/microcli-refactor-20191119.165510-1.jar"
     version "1.0"
     sha256 "<sha>"
   def install
-    #   mv Dir.glob("Btree-*").first, "Btree"
-      bin.install "gradlew"
-    end
-    test do
-      foo help
+      java -jar "microcli.jar"
     end
   end
