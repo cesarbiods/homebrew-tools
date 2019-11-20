@@ -5,6 +5,6 @@ class Microcli < Formula
     version "1.0"
     sha256 "<sha>"
   def install
-      java -jar microcli.jar
+      system 'java -jar microcli.jar'
     end
   end
