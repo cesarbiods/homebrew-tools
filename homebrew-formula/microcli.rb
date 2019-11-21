@@ -4,10 +4,9 @@ class Microcli < Formula
     url "https://us-east-1.artifactory.wexapps.com/artifactory/fleet-mobile-snapshots/com/wex/microcli/refactor-SNAPSHOT/microcli-refactor-20191119.165510-1.jar"
     version "1.0"
     bottle :microcli
-    # depends_on :java => '1.8+'
+    depends_on :java => '1.8+'
     
   def install
-      system 'launchctl setenv JAVA_HOME ~/.sdkman/candidates/java/current'
       libexec.install Dir['*']
       bin.write_jar_script libexec/'microcli.jar', 'microcli'
       # system 'java -jar microcli.jar'
