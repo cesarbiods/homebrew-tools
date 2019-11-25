@@ -5,7 +5,6 @@ class Microcli < Formula
   sha256 "4763aaa12c58ae29354953b4e308854d3cefb9222c6262cf788b79ac50b68cf7"
   version "1.0"
   bottle :microcli
-  # depends_on :openjdk => '1.8+'
     
   def install
     libexec.install Dir['*']
