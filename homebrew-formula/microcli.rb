@@ -4,7 +4,7 @@ class Microcli < Formula
     url "https://us-east-1.artifactory.wexapps.com/artifactory/fleet-mobile-snapshots/com/wex/microcli/refactor-SNAPSHOT/microcli-refactor-20191119.165510-1.jar"
     version "1.0"
     bottle :microcli
-    depends_on :openjdk => '1.8+'
+    depends_on :jdk => '1.8+'
     
   def install
       libexec.install Dir['*']
