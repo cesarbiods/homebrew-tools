@@ -7,7 +7,7 @@ class Microcli < Formula
   bottle :microcli
     
   def install
-    libexec.install Dir['*']
+    # libexec.install Dir['*']
     bin.write_jar_script libexec/'microcli.jar', 'microcli'
   end
 end
