@@ -8,6 +8,6 @@ class Microcli < Formula
     
   def install
     libexec.install Dir['*']
-    bin.write_jar_script brew/'microcli.jar', 'microcli'
+    bin.write_jar_script libexec/'microcli.jar', 'microcli'
   end
 end
