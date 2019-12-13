@@ -8,6 +8,6 @@ class Microcli < Formula
 
   def install
     libexec.install Dir['*']
-    bin.write_jar_script libexec/'microcli.jar', 'microcli'
+    bin.write_jar_script libexec/'microcli-refactor-20191119.165510-1.jar', 'microcli'
   end
 end
