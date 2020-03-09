@@ -1,4 +1,4 @@
-class MicrocliBeta < Formula
+class Microclibeta < Formula
   desc "Microcli is a CLI tool for managing AWS Cloud Formation Stacks"
   homepage "https://bitbucket.wexapps.com/projects/MOB/repos/microcli/browse"
   url "https://us-east-1.artifactory.wexapps.com/artifactory/fleet-mobile-releases/com/wex/microcli/2.4.0/microcli-2.4.0.jar"
