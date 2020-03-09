@@ -5,7 +5,7 @@ class Microclibeta < Formula
   sha256 "fd64a1e9be67232049a6b9a26ed5789deccc8e3b70f2d649e0eccbda8ff3094b"
   version "2.4"
   bottle :unneeded
-  depends_on :corretto
+  depends_on :correto
 
   def install
     libexec.install Dir['*']
